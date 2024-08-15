@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navlogo">
+                <img src="logo.png">
+            </div>
+            <div class="navmenu">
+                <ul class="menu">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Krishi Varta</a>
+                        <a href="#" class="dropdown-item">Krishi Sahayata</a>
+                        <a href="#" class="dropdown-item">Vidhi Varta</a>
+                    </div>
+                </li>
+                    <li><a href="#">Profiles</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                <button id="search-button" class="search-button">Search</button>
+            </div>        
+        </div>
+    </header>
+    <main>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url(c1.jpg) ;">
+                    <h1>Paddy Expansion</h1>
+                    <p>Paddy acreage rises 4.28 pc, cotton area lags in kharif season so far: Govt data</p>
+                    <a href="https://economictimes.indiatimes.com/news/economy/agriculture/paddy-acreage-rises-4-28-pc-cotton-area-lags-in-kharif-season-so-far-govt-data/articleshow/112474739.cms" class="btn" id="button">Read More</a>
+                </div>
+                <div class="carousel-item" style="background-image:url(c2.jpg) ;">
+                    <h1>Araku Farmer's Success</h1>
+                    <p>Earned Rs 28,000 from 0.30 acres with a minimal cost of Rs 2,300, plus food items for consumption.</p>
+                    <a href="https://naturalfarming.niti.gov.in/farmers-success-stories/" class="btn" id="button">Read More</a>
+                </div>
+                <div class="carousel-item" style="background-image:url(c3.jpg) ;">
+                    <h1>Natural Farming Success</h1>
+                    <p>Farmer Yashi Dolma Turns Cold Desert into a Bountiful Farm Using Revolutionary Natural Farming Techniques!</p>
+                    <a href="https://naturalfarming.niti.gov.in/farmers-success-stories/" class="btn" id="button">Read More</a>
+                </div>
+            </div>
+        
+            <a class="carousel-control-prev" href="#" role="button" onclick="prevSlide()">
+                <span class="carousel-control-prev-icon">&lt;</span>
+            </a>
+            <a class="carousel-control-next" href="#" role="button" onclick="nextSlide()">
+                <span class="carousel-control-next-icon">&gt;</span>
+            </a>
+        </div>
+        <div class="three-column-section">
+            <div class="column">
+                <div class="icon-placeholder"><img src="f1.jpg" alt="pf"></div>
+                <h2>Rajesh Kumar, Farmer from Rajasthan</h2>
+                <p>I've farmed for over 20 years, but the agricultural research web app transformed my experience. By connecting with researchers, I received drought-resistant seeds that thrived even in harsh conditions. The monetary compensation helped me invest in better equipment, making me a more resilient and successful farmer. I'm grateful for the opportunities this app has provided!
+                </p>
+                <a href="#" class="btn">Visit Profile »</a>
+            </div>
+        
+            <div class="column">
+                <div class="icon-placeholder"><img src="f2.jpg" alt="pf"></div>
+                <h2>Savita Devi, Farmer from Uttar Pradesh</h2>
+                <p>As a small-scale farmer, I often felt unheard in agricultural research. The web app changed that by allowing me to share my experiences directly with researchers. I participated in a study on organic pest control, which improved my crop yields and soil health. The training I received helped me adopt sustainable practices. I'm proud to be part of this collaborative community!</p>
+                <a href="#" class="btn">Visit Profile »</a>
+            </div>
+        
+            <div class="column">
+                <div class="icon-placeholder"><img src="f3.jpg" alt="pf"></div>
+                <h2>Suresh Patil, Farmer from Maharashtra</h2>
+                <p>I'm passionate about new farming technologies, and the agricultural research web app connected me with researchers working on precision farming. They provided soil sensors and weather monitoring tools, leading to a 20% increase in my crop yields and a 30% reduction in water usage. The ongoing support made me feel like a true partner in research, and I'm now a role model for other farmers! 
+                </p>
+                <a href="#" class="btn">Visit Profile »</a>
+            </div>
+        </div>
+        <div class="featurette">
+            <div class="featurette-text">
+                <h1>Introducing Krishi Varta: Your Intelligent Agricultural Chatbot</h1>
+                <p>Krishi Varta is an innovative chatbot feature within our agricultural research web app, designed to provide farmers with instant access to expert advice and valuable information. By answering questions on crop management, pest control, and market trends, Krishi Varta empowers farmers to make informed decisions. With its user-friendly interface, farmers can easily communicate their needs and receive tailored recommendations. Experience the future of farming support with Krishi Varta, your reliable partner in agriculture!</p>
+            </div>
+            <div class="featurette-image">
+                <div class="image-placeholder" style="background-image: url(GenAI.png);"></div>
+            </div>
+        </div>
+        <div class="featurette">
+            <div class="featurette-image">
+                <div class="image-placeholder" style="background-image: url(DA.jpg);"></div>
+            </div>
+            <div class="featurette-text">
+                <h1>Introducing Krishi Data: Your Comprehensive Data Analysis Dashboard</h1>
+                <p>Krishi Data is a powerful data analysis dashboard integrated into our agricultural research web app, designed to provide farmers and researchers with actionable insights based on their specific constraints and parameters. By inputting variables such as crop type, soil conditions, and weather patterns, users can generate detailed reports that highlight trends, performance metrics, and optimization strategies. This intuitive dashboard empowers users to make data-driven decisions, enhancing productivity and sustainability in their farming practices. Unlock the potential of your agricultural data with Krishi Data and drive your success forward!</p>
+            </div>
+        </div>
+        <div class="featurette">
+            <div class="featurette-text">
+                <h1>Vidhi Varta: Your Agricultural Legal Resource</h1>
+                <p>Vidhi Varta is a streamlined legal help page in our portal,  providing farmers with clear updates on essential laws and regulations. It simplifies complex legal changes related to crop insurance, land rights, and subsidies, ensuring farmers stay informed and compliant. With concise explanations and practical guidance, Vidhi Varta empowers farmers to navigate the legal landscape confidently.</p>
+            </div>
+            <div class="featurette-image">
+                <div class="image-placeholder" style="background-image: url(Legal.jpg);"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Street Name, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Carousel -->
+    <script src="script.js"></script>
+</body>
+</html>
